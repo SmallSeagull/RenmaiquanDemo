@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70pt"
+    android:layout_marginTop="35pt">
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50pt"
+        android:textSize="43pt"
+        android:textColor="@color/color_333333"
+        android:text="金融"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="200pt"
+        android:layout_height="70pt"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50pt"
+        android:background="@drawable/label_border"
+        android:textSize="35pt"
+        android:textColor="@color/color_666666"
+        android:gravity="center"
+        android:text="认证"/>
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graybackground"
+    tools:context="com.dolphin.renmaicircle.activity.personalcenter.BillDetailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="800pt"
+        android:layout_marginLeft="26pt"
+        android:layout_marginRight="26pt"
+        android:layout_marginTop="20pt"
+        android:background="@drawable/bg_ffffff_corner_14px">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60pt"
+            android:layout_marginLeft="50pt"
+            android:textSize="46pt"
+            android:textColor="@color/color_333333"
+            android:text="提现金额"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50pt"
+            android:textSize="46pt"
+            android:textColor="@color/color_333333"
+            android:text="120.00"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1pt"
+            android:layout_marginTop="187pt"
+            android:layout_marginLeft="52pt"
+            android:layout_marginRight="52pt"
+            android:background="@color/graybackground"/>
+
+        <com.dolphin.renmaicircle.widget.AlignTextView
+            android:id="@+id/tv_type"
+            android:layout_width="180pt"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="255pt"
+            android:layout_marginLeft="50pt"
+            android:textColor="@color/color_666666"
+            android:textSize="40pt"
+            app:text="类型"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_type"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50pt"
+            android:textSize="40pt"
+            android:textColor="@color/color_666666"
+            android:text="进账"/>
+
+        <com.dolphin.renmaicircle.widget.AlignTextView
+            android:id="@+id/tv_time"
+            android:layout_width="180pt"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="370pt"
+            android:layout_marginLeft="50pt"
+            android:textColor="@color/color_666666"
+            android:textSize="40pt"
+            app:text="时间"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_time"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50pt"
+            android:textSize="40pt"
+            android:textColor="@color/color_666666"
+            android:text="2018-08-01    08:30:00"/>
+
+        <com.dolphin.renmaicircle.widget.AlignTextView
+            android:id="@+id/tv_odd"
+            android:layout_width="180pt"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="484pt"
+            android:layout_marginLeft="50pt"
+            android:textColor="@color/color_666666"
+            android:textSize="40pt"
+            app:text="交易单号"/>
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_odd"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50pt"
+            android:textSize="40pt"
+            android:textColor="@color/color_666666"
+            android:text="1234567890123456"/>
+
+        <com.dolphin.renmaicircle.widget.AlignTextView
+            android:id="@+id/tv_balance"
+            android:layout_width="180pt"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="600pt"
+            android:layout_marginLeft="50pt"
+            android:textColor="@color/color_666666"
+            android:textSize="40pt"
+            app:text="剩余零钱"/>
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_balance"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50pt"
+            android:textSize="40pt"
+            android:textColor="@color/color_666666"
+            android:text="123.00"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

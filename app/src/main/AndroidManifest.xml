@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dolphin.renmaicircle">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.dolphin.renmaicircle.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider>
+
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".activity.register.LoginActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.register.RegisterActivity" />
+        <activity android:name=".activity.register.ForgetPasswordActivity" />
+        <activity android:name=".activity.DynamcMessageActivity" />
+        <activity android:name=".activity.personalcenter.SettingActivity" />
+        <activity android:name=".activity.personalcenter.ChangePasswordActivity" />
+        <activity android:name=".activity.personalcenter.AuthActivity" />
+        <activity android:name=".activity.personalcenter.AuthIDCardActivity" />
+        <activity android:name=".activity.personalcenter.AuthCardDetailActivity" />
+        <activity android:name=".activity.personalcenter.PersonInformationActivity" />
+        <activity android:name=".activity.personalcenter.EditBaseDataActivity" />
+        <activity android:name=".activity.personalcenter.FeedbackActivity" />
+        <activity android:name=".activity.personalcenter.AddBankCardActivity" />
+        <activity android:name=".activity.personalcenter.FavoriteActivity" />
+        <activity android:name=".activity.personalcenter.LabelActivity" />
+        <activity android:name=".activity.personalcenter.SystemMessageActivity" />
+        <activity android:name=".activity.personalcenter.WaitingSolveActivity" />
+        <activity android:name=".activity.personalcenter.WalletActivity" />
+        <activity android:name=".activity.personalcenter.BankCardActivity" />
+        <activity android:name=".activity.personalcenter.ChangeActivity" />
+        <activity android:name=".activity.personalcenter.MyBillActivity" />
+        <activity android:name=".activity.personalcenter.BillDetailActivity" />
+        <activity android:name=".activity.personalcenter.RechargeActivity" />
+        <activity android:name=".activity.personalcenter.WithdrawActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.DiscoverAndNearDetailActivity"></activity>
+    </application>
+
+</manifest>

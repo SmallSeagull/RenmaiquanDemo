@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#047DFF</color>
+    <color name="colorPrimaryDark">#047DFF</color>
+    <color name="colorAccent">#047DFF</color>
+    <color name="themecolor">#1d325f</color>
+    <color name="secondcolor">#047DFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="linecolor">#dddfe2</color>
+    <color name="textcolor_hint">#98A4AF</color>
+    <color name="tabcolor_normal">#898C93</color>
+    <color name="tabcolor_select">#3EA1FE</color>
+    <color name="textcolor">#333333</color>
+    <color name="black">#000000</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+    <color name="graybackground">#f3f5f8</color>
+    <color name="color_D2E7FE">#D2E7FE</color>
+    <color name="color_dddddd">#dddddd</color>
+    <color name="color_bfbfbf">#bfbfbf</color>
+    <color name="color_f2f3f7">#F2F3F7</color>
+    <color name="color_F6A22A">#F6A22A</color>
+    <color name="color_A25AFD">#A25AFD</color>
+    <color name="color_ff4957">#FF4957</color>
+    <color name="color_f19149">#F19149</color>
+    <color name="color_B8D1FF">#B8D1FF</color>
+    <color name="color_FDCE73">#FDCE73</color>
+    <color name="color_9FAFC0">#9FAFC0</color>
+    <color name="color_0054D1">#F20054D1</color>
+    <color name="color_1F74F6">#1F74F6</color>
+</resources>

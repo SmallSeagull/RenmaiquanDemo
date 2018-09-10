@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.dolphin.renmaicircle.activity.personalcenter.ChangeActivity">
+
+    <ImageView
+        android:layout_width="245pt"
+        android:layout_height="245pt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120pt"
+        android:background="@drawable/ic_persona_change"/>
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400pt"
+        android:layout_centerHorizontal="true"
+        android:textSize="66pt"
+        android:textColor="@color/color_333333"
+        android:text="¥10086"/>
+
+    <TextView
+        android:id="@+id/recharge"
+        android:layout_width="959pt"
+        android:layout_height="112pt"
+        android:background="@drawable/bg_themecolor_corner_56"
+        android:text="充值"
+        android:layout_centerHorizontal="true"
+        android:textSize="46pt"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="760pt"/>
+
+    <TextView
+        android:id="@+id/withdraw"
+        android:layout_width="959pt"
+        android:layout_height="112pt"
+        android:background="@drawable/bg_second_corner_56"
+        android:text="提现"
+        android:layout_centerHorizontal="true"
+        android:textSize="46pt"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="955pt"/>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40pt"
+        android:textColor="@color/color_999999"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="72pt"
+        android:layout_centerHorizontal="true"
+        android:text="常见问题"/>
+
+</RelativeLayout>

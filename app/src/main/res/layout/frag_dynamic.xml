@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="275pt"
+        android:background="@color/themecolor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70pt">
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_marginLeft="55pt"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_dynamic_search" />
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_marginRight="55pt"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_dynamic_editor" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="100pt"
+                android:layout_marginLeft="320pt"
+                android:layout_marginRight="320pt"
+                android:background="@color/transparent"
+                app:tabIndicatorColor="@color/color_FDCE73"
+                app:tabIndicatorHeight="3pt"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextColor="@color/color_B8D1FF"
+                app:tabTextAppearance="@style/TabLayoutTextStyle"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200pt">
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="383pt"
+                android:layout_marginLeft="37pt"
+                android:layout_marginRight="37pt"
+                android:background="@android:color/transparent">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_scrollFlags="scroll" />
+
+            </android.support.design.widget.AppBarLayout>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+</RelativeLayout>

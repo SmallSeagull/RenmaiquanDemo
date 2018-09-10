@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.dolphin.renmaicircle.activity.personalcenter.AddBankCardActivity">
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="140pt"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1pt"
+            android:layout_alignParentBottom="true"
+            android:src="@color/linecolor"/>
+
+        <com.dolphin.renmaicircle.widget.AlignTextView
+            android:layout_width="180pt"
+            android:layout_height="wrap_content"
+            app:suffixMode="full_width"
+            android:layout_marginLeft="52pt"
+            android:layout_centerVertical="true"
+            app:text="持卡人："
+            android:textColor="@color/color_333333"
+            android:textSize="40pt" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="250pt"
+            android:textColor="@color/color_666666"
+            android:hint="持卡人姓名"
+            android:maxLines="1"
+            android:textSize="43pt"
+            android:background="@null"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="140pt"
+        android:layout_below="@id/rl1"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1pt"
+            android:layout_alignParentBottom="true"
+            android:src="@color/linecolor"/>
+
+        <com.dolphin.renmaicircle.widget.AlignTextView
+            android:layout_width="180pt"
+            android:layout_height="wrap_content"
+            app:suffixMode="full_width"
+            android:layout_marginLeft="52pt"
+            android:layout_centerVertical="true"
+            app:text="卡号："
+            android:textColor="@color/color_333333"
+            android:textSize="40pt" />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="250pt"
+            android:hint="银行卡号"
+            android:textColor="@color/color_666666"
+            android:textSize="43pt"
+            android:background="@null"
+            android:maxLines="1"
+            android:inputType="number"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="140pt"
+        android:layout_below="@id/rl2"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1pt"
+            android:layout_alignParentBottom="true"
+            android:src="@color/linecolor"/>
+
+        <com.dolphin.renmaicircle.widget.AlignTextView
+            android:layout_width="180pt"
+            android:layout_height="wrap_content"
+            app:suffixMode="full_width"
+            android:layout_marginLeft="52pt"
+            android:layout_centerVertical="true"
+            app:text="开户行："
+            android:textColor="@color/color_333333"
+            android:textSize="40pt" />
+
+        <TextView
+            android:id="@+id/bank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="250pt"
+            android:hint="点击确定获取开户行"
+            android:textColor="@color/color_666666"
+            android:textSize="43pt"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="52pt"
+            android:textSize="40pt"
+            android:textColor="@color/secondcolor"
+            android:gravity="center_vertical"
+            android:text="获取开户行"/>
+
+        <!--<ImageView-->
+            <!--android:layout_width="21pt"-->
+            <!--android:layout_height="39pt"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="52pt"-->
+            <!--android:src="@drawable/ic_persona_editor_jt"/>-->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/commit"
+        android:layout_width="match_parent"
+        android:layout_height="112pt"
+        android:layout_marginLeft="60pt"
+        android:layout_marginRight="60pt"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70pt"
+        android:background="@drawable/bg_themecolor_corner_56"
+        android:textSize="46pt"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="提 交"/>
+
+
+
+
+</RelativeLayout>

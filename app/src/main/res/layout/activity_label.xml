@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dolphin.renmaicircle.activity.personalcenter.LabelActivity">
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="498pt"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_f2f3f7">
+        <TextView
+            android:id="@+id/commit"
+            android:layout_width="match_parent"
+            android:layout_height="112pt"
+            android:layout_marginLeft="60pt"
+            android:layout_marginRight="60pt"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70pt"
+            android:background="@drawable/bg_themecolor_corner_56"
+            android:textSize="46pt"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="确认"/>
+
+        <com.zhy.view.flowlayout.FlowLayout
+            android:id="@+id/label_select_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50pt"
+            android:paddingTop="50pt"/>
+    </RelativeLayout>
+    <com.zhy.view.flowlayout.FlowLayout
+        android:id="@+id/label_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl1"
+        android:background="@color/white"
+        android:paddingLeft="50pt"
+        android:paddingTop="50pt"/>
+</RelativeLayout>

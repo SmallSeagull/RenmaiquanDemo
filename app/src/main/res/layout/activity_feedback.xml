@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.dolphin.renmaicircle.activity.personalcenter.FeedbackActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="720pt"
+        android:layout_marginTop="56pt"
+        android:layout_marginLeft="52pt"
+        android:layout_marginRight="52pt">
+        <EditText
+            android:id="@+id/suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:padding="30pt"
+            android:maxLength="200"
+            android:textSize="40pt"
+            android:textColor="@color/color_666666"
+            android:textColorHint="@color/color_999999"
+            android:hint="任何对平台提出的有效建议都可以反馈给我们，您的意见被采纳将会获得奖励哦！"
+            android:background="@drawable/bg_white_stroke_dddddd_corner_14pt"/>
+
+        <TextView
+            android:id="@+id/num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50pt"
+            android:layout_marginBottom="40pt"
+            android:textSize="40pt"
+            android:textColor="@color/color_999999"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="0/200"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/commit"
+        android:layout_width="match_parent"
+        android:layout_height="112pt"
+        android:layout_marginLeft="60pt"
+        android:layout_marginRight="60pt"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70pt"
+        android:background="@drawable/bg_themecolor_corner_56"
+        android:textSize="46pt"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="提交反馈"/>
+
+</RelativeLayout>

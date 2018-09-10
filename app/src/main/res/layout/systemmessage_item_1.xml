@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="50pt"
+    android:paddingRight="50pt"
+    android:paddingBottom="40pt"
+    android:background="@drawable/bg_ffffff_corner_14px">
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40pt">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40pt"
+            android:textColor="@color/color_333333"
+            android:layout_centerVertical="true"
+            android:text="随遇而安啦啦啦啦"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2018-08-01"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_below="@id/rl1"
+        android:layout_marginTop="30pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35pt"
+        android:textColor="@color/color_666666"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="你知道我对你不仅仅是喜欢，眼中却没有我想要的答案"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="316pt"
+    android:layout_height="316pt"
+    android:background="@drawable/bg_ffffff_corner_14px">
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="50pt"
+        android:textColor="@color/color_333333"
+        android:text="发动态"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1pt"
+        android:src="@color/linecolor"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="50pt"
+        android:textColor="@color/color_333333"
+        android:text="写文章"/>
+
+
+</LinearLayout>

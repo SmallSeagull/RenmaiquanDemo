@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280pt"
+    android:background="@color/white">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20pt"
+        android:background="@color/graybackground"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67pt"
+        android:layout_marginLeft="56pt"
+        android:textSize="46pt"
+        android:textColor="@color/color_333333"
+        android:text="购买商品"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="56pt"
+        android:textSize="52pt"
+        android:textColor="@color/color_ff4957"
+        android:text="100.00"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175pt"
+        android:layout_marginLeft="56pt"
+        android:textSize="40pt"
+        android:textColor="@color/color_999999"
+        android:text="2018-08-01   08:30:56"/>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="56pt"
+        android:textSize="40pt"
+        android:textColor="@color/color_333333"
+        android:text="交易成功"/>
+
+</RelativeLayout>

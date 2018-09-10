@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graybackground"
+    tools:context="com.dolphin.renmaicircle.activity.personalcenter.SettingActivity">
+    <!--密码修改-->
+    <RelativeLayout
+        android:id="@+id/change_password"
+        android:layout_width="match_parent"
+        android:layout_height="156pt"
+        android:background="@color/white"
+        android:layout_marginTop="17pt"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40pt"
+            android:textColor="@color/color_666666"
+            android:layout_marginLeft="70pt"
+            android:text="密码修改"/>
+
+        <ImageView
+            android:layout_width="21pt"
+            android:layout_height="37pt"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="89pt"
+            android:src="@drawable/ic_persona_editor_jt"/>
+    </RelativeLayout>
+
+    <!--消息通知-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="156pt"
+        android:background="@color/white"
+        android:layout_marginTop="17pt"
+        android:gravity="center_vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40pt"
+        android:textColor="@color/color_666666"
+        android:layout_marginLeft="70pt"
+        android:text="消息通知"/>
+
+    <com.kyleduo.switchbutton.SwitchButton
+        android:id="@+id/switchs"
+        android:layout_width="119pt"
+        android:layout_height="73pt"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="76pt"/>
+    </RelativeLayout>
+
+    <!--黑名单-->
+    <RelativeLayout
+        android:id="@+id/blacklist"
+        android:layout_width="match_parent"
+        android:layout_height="156pt"
+        android:background="@color/white"
+        android:layout_marginTop="17pt"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40pt"
+            android:textColor="@color/color_666666"
+            android:layout_marginLeft="70pt"
+            android:text="黑名单"/>
+
+        <ImageView
+            android:layout_width="21pt"
+            android:layout_height="37pt"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="89pt"
+            android:src="@drawable/ic_persona_editor_jt"/>
+    </RelativeLayout>
+
+    <!--清除缓存-->
+    <RelativeLayout
+        android:id="@+id/clean"
+        android:layout_width="match_parent"
+        android:layout_height="156pt"
+        android:background="@color/white"
+        android:layout_marginTop="17pt"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40pt"
+            android:textColor="@color/color_666666"
+            android:layout_marginLeft="70pt"
+            android:text="清除缓存"/>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondcolor"
+            android:textSize="40pt"
+            android:text="101M"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80pt"/>
+    </RelativeLayout>
+
+    <!--关于-->
+    <RelativeLayout
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="156pt"
+        android:background="@color/white"
+        android:layout_marginTop="17pt"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40pt"
+            android:textColor="@color/color_666666"
+            android:layout_marginLeft="70pt"
+            android:text="关于"/>
+
+        <ImageView
+            android:layout_width="21pt"
+            android:layout_height="37pt"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="89pt"
+            android:src="@drawable/ic_persona_editor_jt"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/exit"
+            android:layout_width="959pt"
+            android:layout_height="112pt"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70pt"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_themecolor_corner_56"
+            android:textSize="46pt"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="退出登录"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

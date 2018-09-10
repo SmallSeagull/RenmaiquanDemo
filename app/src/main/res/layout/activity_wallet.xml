@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.dolphin.renmaicircle.activity.personalcenter.WalletActivity">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="440pt"
+        android:background="@color/themecolor"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <!--银行卡-->
+        <LinearLayout
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="120pt"
+                android:layout_height="82pt"
+                android:background="@drawable/ic_persona_bankcard"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42pt"
+                android:textSize="43pt"
+                android:textColor="@color/white"
+                android:text="银行卡"/>
+        </LinearLayout>
+
+        <!--人民币余额-->
+        <LinearLayout
+            android:id="@+id/rmb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="105pt"
+                android:layout_height="105pt"
+                android:background="@drawable/ic_persoma_rmc"/>
+            <TextView
+                android:id="@+id/rmb_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42pt"
+                android:textSize="43pt"
+                android:textColor="@color/white"
+                android:text="¥10086"/>
+        </LinearLayout>
+
+
+        <!--人脉值余额-->
+        <LinearLayout
+            android:id="@+id/rmc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="105pt"
+                android:layout_height="105pt"
+                android:background="@drawable/ic_persona_zhuan"/>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42pt"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="37pt"
+                    android:layout_height="37pt"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_persona_rmc_logol"/>
+                <TextView
+                    android:id="@+id/rmc_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="43pt"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="15pt"
+                    android:text="10086"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="143pt"
+        android:layout_below="@id/ll1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48pt"
+            android:textSize="43pt"
+            android:textColor="@color/color_333333"
+            android:layout_gravity="center_vertical"
+            android:text="更多服务"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1pt"
+        android:layout_below="@id/ll2"
+        android:background="@color/linecolor"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_below="@id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

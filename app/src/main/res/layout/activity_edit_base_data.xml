@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graybackground"
+    tools:context="com.dolphin.renmaicircle.activity.personalcenter.EditBaseDataActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="386pt"
+        android:background="@color/themecolor"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="185pt"
+            android:layout_height="185pt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50pt"
+            android:src="@drawable/ic_persona_test_avatar" />
+
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50pt"
+            android:background="@drawable/edit_name_bj_select"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:minWidth="120pt"
+            android:paddingRight="20pt"
+            android:text="随遇而安"
+            android:textColor="@color/edit_name_tv_color"
+            android:textSize="49pt" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="39pt"
+            android:layout_height="36pt"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60pt"
+            android:layout_marginLeft="40pt"
+            android:layout_toRightOf="@id/nickname"
+            android:src="@drawable/ic_persona_user_bj" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="156pt"
+        android:layout_below="@id/rl1"
+        android:layout_marginTop="20pt"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50pt"
+            android:text="性别"
+            android:textColor="@color/color_333333"
+            android:textSize="46pt" />
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="268pt"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_0"
+                android:layout_width="156pt"
+                android:layout_height="84pt"
+                android:layout_weight="1"
+                android:background="@drawable/gender_radio_bg_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="男"
+                android:textColor="@color/gender_radio_tv_color"
+                android:textSize="46pt" />
+
+            <RadioButton
+                android:id="@+id/btn_1"
+                android:layout_width="156pt"
+                android:layout_height="84pt"
+                android:layout_marginLeft="100pt"
+                android:layout_weight="1"
+                android:background="@drawable/gender_radio_bg_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="女"
+                android:textColor="@color/gender_radio_tv_color"
+                android:textSize="46pt" />
+        </RadioGroup>
+    </RelativeLayout>
+    <!--生日-->
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="156pt"
+        android:layout_below="@id/rl2"
+        android:layout_marginTop="1pt"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50pt"
+            android:text="生日"
+            android:textColor="@color/color_333333"
+            android:textSize="46pt" />
+        <ImageView
+            android:layout_width="21pt"
+            android:layout_height="37pt"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50pt"
+            android:src="@drawable/ic_persona_editor_jt"/>
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="112pt"
+            android:textSize="46pt"
+            android:textColor="@color/color_999999"
+            android:text="请选择日期"/>
+    </RelativeLayout>
+
+    <!--地址-->
+    <RelativeLayout
+        android:id="@+id/rl4"
+        android:layout_width="match_parent"
+        android:layout_height="156pt"
+        android:layout_below="@id/rl3"
+        android:layout_marginTop="1pt"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50pt"
+            android:text="地址"
+            android:textColor="@color/color_333333"
+            android:textSize="46pt" />
+        <ImageView
+            android:layout_width="21pt"
+            android:layout_height="37pt"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50pt"
+            android:src="@drawable/ic_persona_editor_jt"/>
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="112pt"
+            android:textSize="46pt"
+            android:textColor="@color/color_999999"
+            android:text="请选择地址"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/address_detail"
+        android:layout_width="match_parent"
+        android:layout_height="156pt"
+        android:layout_below="@id/rl4"
+        android:background="@color/white"
+        android:layout_marginTop="1pt"
+        android:paddingLeft="50pt"
+        android:paddingRight="50pt"
+        android:gravity="center_vertical"
+        android:textSize="46pt"
+        android:hint="详细地址"
+        android:textColor="@color/color_999999"/>
+
+    <TextView
+        android:id="@+id/commit"
+        android:layout_width="match_parent"
+        android:layout_height="112pt"
+        android:layout_marginLeft="60pt"
+        android:layout_marginRight="60pt"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70pt"
+        android:background="@drawable/bg_themecolor_corner_56"
+        android:textSize="46pt"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="完 成"/>
+
+
+
+</RelativeLayout>

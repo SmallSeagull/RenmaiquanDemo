@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graybackground"
+    tools:context="com.dolphin.renmaicircle.activity.personalcenter.WithdrawActivity">
+    
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="700pt"
+        android:layout_marginTop="30pt"
+        android:layout_marginLeft="26pt"
+        android:layout_marginRight="26pt"
+        android:background="@drawable/bg_ffffff_corner_14px">
+
+        <RelativeLayout
+            android:id="@+id/select_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60pt">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="52pt"
+                android:textSize="43pt"
+                android:textColor="@color/color_666666"
+                android:text="到账银行"/>
+            
+            <ImageView
+                android:id="@+id/bank_logo"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:background="@drawable/ic_wechat_small"
+                android:layout_marginLeft="325pt"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="378pt"
+                android:layout_centerVertical="true"
+                android:textSize="37pt"
+                android:textColor="@color/color_666666"
+                android:text="邮政银行（1234）"/>
+            
+            <ImageView
+                android:layout_width="20pt"
+                android:layout_height="37pt"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="52pt"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_persona_editor_jt"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="135pt"
+            android:textSize="35pt"
+            android:textColor="@color/color_f19149"
+            android:text="24小时之内到账"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260pt"
+            android:layout_marginLeft="52pt"
+            android:textSize="46pt"
+            android:textColor="@color/color_333333"
+            android:text="提现金额"/>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="390pt"
+            android:layout_marginLeft="52pt"
+            android:textSize="66pt"
+            android:textColor="@color/color_333333"
+            android:text="¥"/>
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv"
+            android:layout_toRightOf="@id/tv"
+            android:textSize="66pt"
+            android:inputType="number"
+            android:background="@null"
+            android:paddingLeft="15pt"
+            android:textColor="@color/color_333333"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1pt"
+            android:layout_marginTop="504pt"
+            android:layout_marginLeft="52pt"
+            android:layout_marginRight="52pt"
+            android:background="@color/linecolor"/>
+
+        <TextView
+            android:id="@+id/tv_surplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="52pt"
+            android:layout_marginBottom="104pt"
+            android:textSize="35pt"
+            android:textColor="@color/color_999999"
+            android:text="零钱余额￥123.04"/>
+
+        <TextView
+            android:id="@+id/withdraw_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_surplus"
+            android:layout_toRightOf="@id/tv_surplus"
+            android:layout_marginLeft="20pt"
+            android:textSize="35pt"
+            android:textColor="@color/themecolor"
+            android:text="全部提现"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

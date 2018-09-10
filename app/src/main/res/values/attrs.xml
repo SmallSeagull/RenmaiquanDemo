@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Textview两端对齐的自定义属性-->
+    <declare-styleable name="AlignTextView">
+        <!-- 文本-->
+        <attr name="text" format="string"/>
+        <!-- 后缀符号类型:全角、半角-->
+        <attr name="suffixMode" format="enum">
+            <enum name="full_width" value="1"/>
+            <enum name="half_width" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PayPsdInputView">
+
+        <attr name="maxCount" format="integer" />
+        <attr name="circleColor" format="color" />
+        <attr name="bottomLineColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="divideLineWidth" format="dimension" />
+        <attr name="divideLineColor" format="color" />
+        <attr name="rectAngle" format="dimension" />
+        <attr name="focusedColor" format="color"/>
+        <attr name="psdType" format="enum">
+            <enum name="weChat" value="0" />
+            <enum name="bottomLine" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

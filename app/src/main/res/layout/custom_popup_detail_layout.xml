@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daasuu.bl.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:bl_arrowDirection="top"
+    app:bl_arrowHeight="15pt"
+    app:bl_arrowPosition="220pt"
+    app:bl_arrowWidth="30pt"
+    app:bl_bubbleColor="@color/color_0054D1"
+    app:bl_cornersRadius="14pt">
+    <LinearLayout
+        android:layout_width="270pt"
+        android:layout_height="410pt"
+        android:background="@drawable/bg_0054d1_corner_6pt"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/white"
+            android:textSize="40pt" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1pt"
+            android:src="@color/color_1F74F6" />
+
+        <TextView
+            android:id="@+id/collect"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="收藏"
+            android:textColor="@color/white"
+            android:textSize="40pt" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1pt"
+            android:src="@color/color_1F74F6" />
+
+        <TextView
+            android:id="@+id/report"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="举报"
+            android:textColor="@color/white"
+            android:textSize="40pt" />
+    </LinearLayout>
+
+</com.daasuu.bl.BubbleLayout>

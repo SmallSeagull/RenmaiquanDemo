@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15pt"
+    android:background="@drawable/bg_ffffff_corner_14px">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:roundedCornerRadius="14pt"
+        fresco:roundTopLeft="true"
+        fresco:roundTopRight="true"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10pt"
+        android:textSize="35pt"
+        android:background="@drawable/favorite_time_bg"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:text="2018-06-08"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv"
+        android:maxHeight="140pt"
+        android:textSize="40pt"
+        android:textColor="@color/color_333333"
+        android:padding="32pt"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:text="哇哈哈王老吉加多宝红牛脉动优酸乳啊哈哈哈哈哈哈哈哈"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content"
+        android:layout_marginTop="30pt"
+        android:paddingLeft="32pt"
+        android:paddingRight="32pt">
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="67pt"
+            android:layout_height="67pt"/>
+
+        <TextView
+            android:id="@id/nickname"
+            android:layout_width="135pt"
+            android:layout_height="wrap_content"
+            android:textSize="35pt"
+            android:textColor="@color/color_999999"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="127pt"
+            android:text="随遇而安"/>
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35pt"
+            android:layout_marginBottom="40pt"
+            android:textColor="@color/color_999999"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="0.2km"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.dolphin.renmaicircle.activity.personalcenter.AuthActivity">
+    <RelativeLayout
+        android:id="@+id/auth_idcard"
+        android:layout_width="match_parent"
+        android:layout_height="230pt"
+        android:layout_marginTop="29pt"
+        android:layout_marginLeft="26pt"
+        android:layout_marginRight="26pt"
+        android:background="@drawable/changepassword_tv_bg">
+        <ImageView
+            android:layout_width="109pt"
+            android:layout_height="81pt"
+            android:src="@drawable/ic_persona_certification"
+            android:layout_marginLeft="55pt"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_width="23pt"
+            android:layout_height="43pt"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="43pt"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_persona_editor_jt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="133pt"
+            android:textColor="@color/color_333333"
+            android:textSize="50pt"
+            android:text="身份认证"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

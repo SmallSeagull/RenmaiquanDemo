@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="976pt"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_ffffff_corner_14px">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="46pt"
+        android:layout_marginTop="48pt"
+        android:textColor="@color/color_333333"
+        android:text="职业信息"/>
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62pt"
+        android:layout_marginLeft="97pt"
+        android:textSize="43pt"
+        android:textColor="@color/color_333333"
+        android:text="公司名称"/>
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20pt"
+            android:layout_marginLeft="97pt"
+            android:layout_marginRight="97pt"
+            android:textSize="35pt"
+            android:textColor="@color/color_666666"
+            android:maxLines="1"
+            android:background="@null"/>
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="1pt"
+    android:layout_marginLeft="97pt"
+    android:layout_marginRight="97pt"
+    android:layout_marginTop="10pt"
+    android:background="@color/linecolor"/>
+
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62pt"
+        android:layout_marginLeft="97pt"
+        android:textSize="43pt"
+        android:textColor="@color/color_333333"
+        android:text="职位"/>
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20pt"
+        android:layout_marginLeft="97pt"
+        android:layout_marginRight="97pt"
+        android:textSize="35pt"
+        android:textColor="@color/color_666666"
+        android:maxLines="1"
+        android:background="@null"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1pt"
+        android:layout_marginLeft="97pt"
+        android:layout_marginRight="97pt"
+        android:layout_marginTop="10pt"
+        android:background="@color/linecolor"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1pt"
+        android:layout_marginTop="96pt"
+        android:background="@color/linecolor"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="166pt">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="50pt"
+            android:textColor="@color/color_999999"
+            android:text="取消"/>
+        <ImageView
+            android:layout_width="2pt"
+            android:layout_height="match_parent"
+            android:background="@color/linecolor"/>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="50pt"
+            android:textColor="@color/themecolor"
+            android:text="确定"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

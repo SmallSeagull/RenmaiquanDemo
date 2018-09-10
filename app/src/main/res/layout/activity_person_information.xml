@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graybackground"
+    tools:context="com.dolphin.renmaicircle.activity.personalcenter.PersonInformationActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="184pt"
+        android:background="@color/themecolor" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="36pt">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="504pt"
+                android:layout_marginLeft="26pt"
+                android:layout_marginRight="26pt"
+                android:background="@drawable/bg_ffffff_corner_14px">
+                <!--头像-->
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="137pt"
+                    android:layout_height="137pt"
+                    android:layout_marginLeft="50pt"
+                    android:layout_marginTop="40pt" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="224pt"
+                    android:layout_marginTop="50pt"
+                    android:text="随遇而安"
+                    android:textColor="@color/black"
+                    android:textSize="43pt"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/gender_iv"
+                    android:layout_width="36pt"
+                    android:layout_height="36pt"
+                    android:layout_alignBottom="@id/name"
+                    android:layout_marginBottom="10pt"
+                    android:layout_marginLeft="50pt"
+                    android:layout_toRightOf="@id/name" />
+
+                <LinearLayout
+                    android:id="@+id/tv_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/avatar"
+                    android:layout_alignLeft="@id/name"
+                    android:layout_marginBottom="4pt"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:id="@+id/influence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50pt"
+                    android:layout_marginTop="100pt"
+                    android:text="影响力:100"
+                    android:textColor="@color/color_333333"
+                    android:textSize="35pt" />
+                <!--仅好友可见-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="59pt"
+                    android:layout_marginTop="303pt"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="33pt"
+                        android:layout_height="40pt"
+                        android:src="@drawable/ic_persona_user_dh" />
+
+                    <TextView
+                        android:id="@+id/visible_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="37pt"
+                        android:text="仅好友可见"
+                        android:textColor="@color/color_333333"
+                        android:textSize="35pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="51pt"
+                    android:layout_marginTop="394pt"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50pt"
+                        android:layout_height="34pt"
+                        android:src="@drawable/ic_persona_user_yx" />
+
+                    <TextView
+                        android:id="@+id/visible_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28pt"
+                        android:text="仅好友可见"
+                        android:textColor="@color/color_333333"
+                        android:textSize="35pt" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="150pt"
+                    android:layout_marginRight="56pt"
+                    android:text="江西赣州"
+                    android:textColor="@color/color_333333"
+                    android:textSize="43pt" />
+
+                <TextView
+                    android:id="@+id/edit_data"
+                    android:layout_width="260pt"
+                    android:layout_height="70pt"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50pt"
+                    android:layout_marginTop="360pt"
+                    android:background="@drawable/bg_d2e7fe_corner_35pt"
+                    android:gravity="center"
+                    android:text="编辑基本资料"
+                    android:textColor="@color/secondcolor"
+                    android:textSize="35pt"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="318pt"
+                android:layout_below="@id/rl1"
+                android:layout_marginLeft="26pt"
+                android:layout_marginRight="26pt"
+                android:layout_marginTop="25pt"
+                android:background="@drawable/bg_ffffff_corner_14px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50pt"
+                    android:layout_marginTop="40pt"
+                    android:text="职业信息"
+                    android:textColor="@color/color_333333"
+                    android:textSize="40pt" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40pt">
+
+                    <TextView
+                        android:id="@+id/company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50pt"
+                        android:maxLines="1"
+                        android:text="阿里巴巴集团"
+                        android:textColor="@color/secondcolor"
+                        android:textSize="49pt" />
+
+                    <ImageView
+                        android:id="@+id/edit_company"
+                        android:layout_width="49pt"
+                        android:layout_height="45pt"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50pt"
+                        android:src="@drawable/ic_persona_user_edit"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50pt"
+                    android:layout_marginTop="35pt"
+                    android:text="集团董事兼CEO"
+                    android:textColor="@color/color_333333"
+                    android:textSize="40pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="match_parent"
+                android:layout_height="302pt"
+                android:layout_below="@id/ll2"
+                android:layout_marginLeft="26pt"
+                android:layout_marginRight="26pt"
+                android:layout_marginTop="25pt"
+                android:background="@drawable/bg_ffffff_corner_14px"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50pt"
+                    android:layout_marginTop="40pt"
+                    android:text="教育信息"
+                    android:textColor="@color/color_333333"
+                    android:textSize="40pt" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40pt">
+
+                    <TextView
+                        android:id="@+id/school"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50pt"
+                        android:maxLines="1"
+                        android:text="哈佛大学"
+                        android:textColor="@color/secondcolor"
+                        android:textSize="49pt" />
+
+                    <ImageView
+                        android:id="@+id/edit_school"
+                        android:layout_width="49pt"
+                        android:layout_height="45pt"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50pt"
+                        android:src="@drawable/ic_persona_user_edit"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50pt"
+                    android:layout_marginTop="35pt"
+                    android:text="硕士"
+                    android:textColor="@color/color_333333"
+                    android:textSize="40pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll3"
+                android:layout_marginBottom="50pt"
+                android:layout_marginLeft="26pt"
+                android:layout_marginRight="26pt"
+                android:layout_marginTop="25pt"
+                android:background="@drawable/bg_ffffff_corner_14px"
+                android:orientation="vertical"
+                android:paddingBottom="50pt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50pt"
+                    android:layout_marginTop="40pt"
+                    android:text="Ta的标签"
+                    android:textColor="@color/color_333333"
+                    android:textSize="40pt" />
+
+                <LinearLayout
+                    android:id="@+id/label_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

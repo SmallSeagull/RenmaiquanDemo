@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.dolphin.renmaicircle.MainActivity">
+
+    <com.chaychan.library.BottomBarLayout
+        android:id="@+id/btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="152pt"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:background="@color/white">
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@drawable/ic_circle_normal"
+            app:iconSelected="@drawable/ic_circle_select"
+            app:itemText="圈子"
+            app:textColorNormal="@color/tabcolor_normal"
+            app:textColorSelected="@color/tabcolor_select"
+            app:itemTextSize="29pt"
+            />
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@drawable/ic_dynmic_normal"
+            app:iconSelected="@drawable/ic_dynmic_select"
+            app:itemText="动态"
+            app:textColorNormal="@color/tabcolor_normal"
+            app:textColorSelected="@color/tabcolor_select"
+            app:itemTextSize="29pt"
+            />
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@drawable/ic_news_normal"
+            app:iconSelected="@drawable/ic_news_select"
+            app:itemText="消息"
+            app:textColorNormal="@color/tabcolor_normal"
+            app:textColorSelected="@color/tabcolor_select"
+            app:itemTextSize="29pt"
+            />
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@drawable/ic_mall_normal"
+            app:iconSelected="@drawable/ic_mall_select"
+            app:itemText="商城"
+            app:textColorNormal="@color/tabcolor_normal"
+            app:textColorSelected="@color/tabcolor_select"
+            app:itemTextSize="29pt"
+            />
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@drawable/ic_me_noemal"
+            app:iconSelected="@drawable/ic_me_select"
+            app:itemText="我的"
+            app:textColorNormal="@color/tabcolor_normal"
+            app:textColorSelected="@color/tabcolor_select"
+            app:itemTextSize="29pt"
+            />
+    </com.chaychan.library.BottomBarLayout>
+
+    <FrameLayout
+        android:id="@+id/frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_container"/>
+
+
+
+</RelativeLayout>

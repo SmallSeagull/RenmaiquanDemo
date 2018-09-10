@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dolphin.renmaicircle.activity.SearchActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="184pt"
+        android:background="@color/themecolor">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90pt">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="23pt"
+                android:layout_height="43pt"
+                android:layout_marginLeft="40pt"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back"/>
+            <RelativeLayout
+                android:layout_width="900pt"
+                android:layout_height="80pt"
+                android:layout_marginLeft="127pt"
+                android:background="@drawable/bg_ffffff_corner_43px">
+                <ImageView
+                    android:layout_width="50pt"
+                    android:layout_height="50pt"
+                    android:layout_marginLeft="28pt"
+                    android:src="@drawable/ic_dynmic_searchs"
+                    android:layout_centerVertical="true"/>
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="104pt"
+                    android:layout_marginRight="20pt"
+                    android:paddingRight="80pt"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:textSize="35pt"
+                    android:textColor="@color/color_666666"
+                    android:textColorHint="@color/color_999999"
+                    android:hint="请输入搜索内容"
+                    android:singleLine="true"
+                    android:imeOptions="actionSearch"/>
+                
+                <ImageView
+                    android:id="@+id/delete"
+                    android:layout_width="50pt"
+                    android:layout_height="match_parent"
+                    android:paddingTop="15pt"
+                    android:paddingBottom="15pt"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20pt"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_dy_delete"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
